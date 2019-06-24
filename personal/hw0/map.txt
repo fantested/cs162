@@ -1,0 +1,23 @@
+• Use objdump with the -D flag on the map executable. Which of the addresses from the output of running ./map are defined in the executable, and which segment/section is each defined in?
+  _main  @ 0x4005c2 in .text section
+  recur @ 0x40057d  in .text section
+  static data: 0x601048	     in .text section
+
+• Make a list of the important segments, and what they are used for (look up their names on the Internet if you don’t know).
+  .text	       - assembly code
+  .bss - uninitialized global variables
+  .data	 - static variables
+  .rodata - read-only data
+  .interp - file name of the dynamic linker
+
+• What direction is the stack growing in?
+  The stack is growing downwards (higher address to lower address).
+
+• How large is the stack frame for each recursive call?
+  48 bytes.
+
+• Where is the heap? What direction is it growing in?
+  The heap is at 0x671010. It's growing upwards.
+
+• Are the two malloc()ed memory areas contiguous? (e.g. is there any extra space between their addresses?)
+  They are not contiguous. There are 112 bytes between them. 

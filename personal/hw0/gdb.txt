@@ -1,0 +1,40 @@
+(char **) 0x7fffffffe638
+
+0x7fffffffe851 "/home/vagrant/code/personal/hw0/wc"
+
+{int (int, char **)} 0x40060d <main>
+
+main (argc=2, argv=0x7fffffffe638) at wc.c:16
+
+Stack level 0, frame at 0x7fffffffe560:
+ rip = 0x40066d in main (wc.c:16); saved rip = 0x7ffff7a32f45
+ source language c.
+ Arglist at 0x7fffffffe550, args: argc=2, argv=0x7fffffffe638
+ Locals at 0x7fffffffe550, Previous frame's sp is 0x7fffffffe560
+ Saved registers:
+  rbp at 0x7fffffffe550, rip at 0x7fffffffe558
+
+rax            0x74     116
+rbx            0x0      0
+rcx            0x7ffff7b00360   140737348895584
+rdx            0x74     116
+rsi            0x6020f0 6299888
+rdi            0x8      8
+rbp            0x7fffffffe550   0x7fffffffe550
+rsp            0x7fffffffe520   0x7fffffffe520
+r8             0xffffffff       4294967295
+r9             0x0      0
+r10            0x22     34
+r11            0x246    582
+r12            0x400520 4195616
+r13            0x7fffffffe630   140737488348720
+r14            0x0      0
+r15            0x0      0
+rip            0x40066d 0x40066d <main+96>
+eflags         0x213    [ CF AF IF ]
+cs             0x33     51
+ss             0x2b     43
+ds             0x0      0
+es             0x0      0
+fs             0x0      0
+gs             0x0      0
